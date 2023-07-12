@@ -76,10 +76,7 @@
         
 </head>
 <body>
-    <label class="switch" onclick="toggleMode()">
-        <input type="checkbox" checked>
-        <span class="slider round" ></span>
-      </label>
+    
     <div class="main_container">
 
         <div class="chat_header">
@@ -87,6 +84,13 @@
         </div>
 
         <div class="chat_container">
+          <div class="mode">
+            <p>Switch to <span>light</span> mode</p>
+          <label class="switch" onclick="toggleMode()">
+            <input type="checkbox" checked>
+            <span class="slider round" ></span>
+          </label>
+          </div>
            <div class="main_chat">
             <div class="other_user_msg">Hello <span class="time_stamp">16:00</span></div>
             <div class="sender_msg">Hey<span class="time_stamp">16:00</span></div>
@@ -96,8 +100,8 @@
             <div class="other_user_msg">Hello <span class="time_stamp">16:00</span></div>
             <div class="sender_msg">Hey<span class="time_stamp">16:00</span></div>
             <div class="other_user_msg">Hello <span class="time_stamp">16:00</span></div>
-            <div class="sender_msg">Hey<span class="time_stamp">16:00</span></div>
-
+            <div class="other_user_msg">Hello <span class="time_stamp">16:00</span></div>
+            
            </div>
 
         
