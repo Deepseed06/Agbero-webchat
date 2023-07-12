@@ -66,28 +66,31 @@
 }
 /* Input Box */
 .chat_input{
-    /* position: absolute; */
+    position: relative;
+    padding: 17px 10px;
     bottom: 0;
-    width: 70%;
+    width: 100%;
     border: 1px solid white;
     border-radius: 20px;
+    margin-top: 20px;
     
     
 }
 .chat_input input{
-    width: 256px;
-    height: 34px;
+    width: 200px;
+    height: 30px;
+    background: none;
+    color: white;
     outline: none;
-    font-size: 18px;
+    font-size: 14px;
     padding: 5px;
     border: none;
-    margin-left: 10px;
 }
 
 /* Icons */
 .chat_input i{
-    padding: 10px;
-    font-size: 20px;
+    padding: 5px ;
+    font-size: 14px;
     opacity: 0.5;
     cursor: pointer;
     color: white;
@@ -95,4 +98,8 @@
 .chat_input i:hover{
     opacity: 1;
 }
-
+button{
+    background: transparent;
+    outline: none;
+    border: none;
+}
