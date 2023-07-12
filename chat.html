@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <script src="https://kit.fontawesome.com/263db0789a.js" crossorigin="anonymous"></script>
+    <title>Responsive WebChat</title>
+    <style>
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 33px;
+          height: 22px;
+        }
+        
+        .switch input { 
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 14px;
+          width: 14px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        
+        input:checked + .slider {
+          background-color: #2196F3;
+        }
+        
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked + .slider:before {
+          -webkit-transform: translateX(14px);
+          -ms-transform: translateX(14px);
+          transform: translateX(14px);
+        }
+
+        /* Dark Mode */
+        body{
+            background: #0000;
+        }
+        
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+        </style>
+        
+</head>
+<body>
+    <label class="switch" onclick="toggleMode()">
+        <input type="checkbox" checked>
+        <span class="slider round" ></span>
+      </label>
+    <div class="main_container">
+
+        <div class="chat_header">
+            <h2>Agbero Chat Room!</h2>
+        </div>
+
+        <div class="chat_container">
+           <div class="main_chat">
+            <div class="other_user_msg">Hello <span class="time_stamp">16:00</span></div>
+            <div class="sender_msg">Hey<span class="time_stamp">16:00</span></div>
+            <div class="other_user_msg">Hello <span class="time_stamp">16:00</span></div>
+            <div class="sender_msg">Hey<span class="time_stamp">16:00</span></div>
+
+            <div class="other_user_msg">Hello <span class="time_stamp">16:00</span></div>
+            <div class="sender_msg">Hey<span class="time_stamp">16:00</span></div>
+            <div class="other_user_msg">Hello <span class="time_stamp">16:00</span></div>
+            <div class="sender_msg">Hey<span class="time_stamp">16:00</span></div>
+
+           </div>
+
+        
+            
+            
+
+            <div class="chat_input">
+                <input type="text" name="" id="chat_box" placeholder="Type your message here....">
+                <i class="fa-sharp fa-solid fa-heart"></i>
+                <i class="fa-sharp fa-solid fa-face-smile"></i>
+                <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                
+            </div>
+        </div>
+
+       
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>

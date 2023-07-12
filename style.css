@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 10px 50px;
+    background: linear-gradient(to right,gold,purple);
+}
+nav ul{
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    color: white;
+}
+nav ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+
+.slider{
+    border: 1px solid red;
+    height: 20vh;
+}
